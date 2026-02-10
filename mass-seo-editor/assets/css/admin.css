@@ -1,0 +1,68 @@
+.mse-wrap {
+	max-width: 100%;
+}
+
+.mse-toolbar {
+	display: flex;
+	justify-content: space-between;
+	gap: 16px;
+	flex-wrap: wrap;
+	margin-bottom: 16px;
+}
+
+.mse-filters,
+.mse-actions {
+	display: flex;
+	gap: 8px;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+#mse-import-form {
+	display: inline-flex;
+	gap: 6px;
+	align-items: center;
+}
+
+.mse-table-wrapper {
+	overflow-x: auto;
+}
+
+#mse-table input[type='text'],
+#mse-table textarea {
+	width: 100%;
+	min-width: 140px;
+}
+
+#mse-table textarea {
+	min-height: 64px;
+}
+
+#mse-message {
+	margin: 8px 0 12px;
+	padding: 8px 10px;
+	border-left: 4px solid #72aee6;
+	background: #f0f6fc;
+}
+
+#mse-message.mse-success {
+	border-left-color: #00a32a;
+	background: #f1fdf3;
+}
+
+#mse-message.mse-error {
+	border-left-color: #d63638;
+	background: #fcf0f1;
+}
+
+.mse-warning {
+	border-color: #dba617 !important;
+	background: #fff8e5;
+}
+
+@media (max-width: 900px) {
+	.mse-toolbar {
+		flex-direction: column;
+		align-items: stretch;
+	}
+}
